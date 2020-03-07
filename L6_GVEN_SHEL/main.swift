@@ -87,6 +87,46 @@ struct Queue<T: Intable> {
     
 }
     
+<<<<<<< HEAD
+var startsWithLetter: (String) -> Bool = {
+    (l1: String) -> Bool in
+    let firstLetter = Array(l1)[0]
+    return firstLetter == "S"
+}
+
+var lengthChecker: (String) -> Bool = { (w1: String) -> Bool in
+    return w1.count > 3
+}
+
+var toLowerCase: (String) -> String = { (w1: String) -> String in
+    return w1.lowercased()
+}
+
+var toAddPrefix: (String) -> String = { (w1: String) -> String in
+    return "Name is " + "\(w1)"
+}
+
+
+func nameChecker(namesArray: [String], predicate: (String) -> Bool) -> [String] {
+    var tmpArray = [String]()
+    for i in namesArray {
+        if predicate(i) {
+        tmpArray.append(i)
+        }
+    }
+    return tmpArray
+}
+
+    func nameModifier(namesArray: [String], predicate: (String) -> String) -> [String] {
+        var tmpArray = [String]()
+        for i in namesArray {
+            tmpArray.append(predicate(i))
+        }
+        return tmpArray
+    }
+
+=======
+>>>>>>> origin/Lesson-6
 
 var queue: Queue<IntNumbers> = Queue()
 
@@ -111,3 +151,13 @@ print(queue)
 print(queue[0, 2])
 
 print(queue.toSort())
+<<<<<<< HEAD
+
+
+var arrayOfNames = ["Andrew", "Samson", "Sergei", "Bob", "Sam", "Antony", "Sol"]
+
+print(nameChecker(namesArray: arrayOfNames, predicate: lengthChecker))
+
+print(nameModifier(namesArray: arrayOfNames, predicate: toLowerCase))
+=======
+>>>>>>> origin/Lesson-6
