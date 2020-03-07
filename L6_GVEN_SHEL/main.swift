@@ -87,6 +87,7 @@ struct Queue<T: Intable> {
     
 }
     
+<<<<<<< HEAD
 var startsWithLetter: (String) -> Bool = {
     (l1: String) -> Bool in
     let firstLetter = Array(l1)[0]
@@ -124,6 +125,8 @@ func nameChecker(namesArray: [String], predicate: (String) -> Bool) -> [String] 
         return tmpArray
     }
 
+=======
+>>>>>>> origin/Lesson-6
 
 var queue: Queue<IntNumbers> = Queue()
 
@@ -148,6 +151,7 @@ print(queue)
 print(queue[0, 2])
 
 print(queue.toSort())
+<<<<<<< HEAD
 
 
 var arrayOfNames = ["Andrew", "Samson", "Sergei", "Bob", "Sam", "Antony", "Sol"]
@@ -155,3 +159,5 @@ var arrayOfNames = ["Andrew", "Samson", "Sergei", "Bob", "Sam", "Antony", "Sol"]
 print(nameChecker(namesArray: arrayOfNames, predicate: lengthChecker))
 
 print(nameModifier(namesArray: arrayOfNames, predicate: toLowerCase))
+=======
+>>>>>>> origin/Lesson-6
